@@ -265,7 +265,6 @@ p {
           min-height: 20vh;
           padding: 0;
         }
-
           .page .category {
             text-align: center;
           }
@@ -280,15 +279,31 @@ p {
             .page .content .media a img {
               height: 160px;
             }
-          .page .detail .product, {
-            flex: 100%;
-          }
             .page .detail .product a img {
-              min-width: 400px;
-              display: block;
-              max-height: none;
+              max-width: 320px;
+              margin: 0 10px;
+              box-sizing: border-box;
             }
-        }
+
+          .page .detail .desc {
+            min-width: inherit;
+            max-width: 270px;
+            max-height: 500px;
+            margin-left: 10px;
+          }
+            .page .detail .desc h2,
+            .page .detail .desc h3,
+            .page .detail .desc p {
+              max-width: inherit;
+              margin-bottom: 5px;
+              display: block;
+              font-weight: normal;
+            }
+
+}
+
+
+
 
 /* footer =============================================== */
 .info {
